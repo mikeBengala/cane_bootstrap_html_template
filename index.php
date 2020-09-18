@@ -7,7 +7,7 @@
 </head>
 <body>
 	<div class="main_wrap">
-		<div class="window_height d-flex flex-column justify-content-center">
+		<div class="window_height d-flex flex-column justify-content-center p-4">
 			<div class="container text-center">
 				<h1 class="title_2">Cane Bootstrap Html Template</h1>
 				<h2 class="title_4">Bootstrap, Fontawesome, And modals</h1>
@@ -52,34 +52,6 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	<script>
-		let Main = {
-			init:function(){
-				$("#show_success_message").click(function(e){
-					e.preventDefault();
-					Main.show_success_message("Mensagem de sucesso vai aqui!");
-				});
-
-				$("#show_error_message").click(function(e){
-					e.preventDefault();
-					Main.show_error_message("Mensagem de erro vai aqui!");
-				});
-			},
-			show_success_message:function(message){
-				// $(".modal.in").modal("hide");
-				$("#success_message .message_placeholder").html(message);
-				$("#success_message").modal("show");
-			},
-			show_error_message:function(message){
-				// $(".modal.in").modal("hide");
-				$("#error_message .message_placeholder").html(message);
-				$("#error_message").modal("show");
-			}
-		}
-		var $ = jQuery;
-		$(function(){
-			Main.init();
-		});
-	</script>
+	<script src="script.js"></script>
 </body>
 </html>
