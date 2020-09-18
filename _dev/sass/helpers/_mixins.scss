@@ -1,0 +1,23 @@
+//apply media query to element
+@mixin apply_media_query($val){
+  @media (max-width: $val) {
+    @content;
+  }
+}
+@mixin apply_media_query_min($val){
+  @media (min-width: $val) {
+    @content;
+  }
+}
+
+//responsive font
+@mixin responsive_font($max_font_size, $min_font_size){
+  font-size: calc(#{$min_font_size}px + (#{$max_font_size} - #{$min_font_size}) * ((100vw - 350px) / (1440 - 350)));
+  
+    @include apply_media_query_min(1411px){
+      font-size: #{$max_font_size}px;
+    }
+    @include apply_media_query(350px){
+      font-size: #{$min_font_size}px;
+    }
+}

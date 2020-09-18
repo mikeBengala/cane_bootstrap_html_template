@@ -1,0 +1,48 @@
+.main_wrap{
+	width:100%;
+	overflow: hidden;
+}
+.title{
+	@include responsive_font(64, 30);
+	font-weight: normal;
+	line-height: 0.94;
+	text-align: center;
+	letter-spacing: 0.15625em;
+	color: #E9A668;
+}
+.title_2{
+	@include responsive_font(46, 27);
+	line-height: 120%;	
+	color: #000000;
+	font-weight: bold;
+}
+.title_3{
+	@include responsive_font(40, 25);
+	font-weight: bold;
+	line-height: 1.1111111111;
+}
+.title_4{
+	@include responsive_font(40, 25);
+	font-weight: 200;
+	line-height: 1.1111111111;
+}
+.text{
+	@include responsive_font(16, 14);
+	line-height:1.625;
+	color: #000000;
+}
+.small_text{
+	font-weight:200;
+	line-height: 1;
+	@include responsive_font(12, 10);
+}
+.window_height{
+	min-height:100vh;
+	padding:32px;
+}
+.black{
+	color:#000;
+}
+.white{
+	color:#fff;
+}

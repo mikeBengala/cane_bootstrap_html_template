@@ -1,0 +1,23 @@
+.modal-backdrop{
+	background:rgba(0,0,0,0.6);
+}
+.big-icon{
+	text-align: center;
+	font-size:75px;
+	margin-bottom:22px;
+	width:100%;
+	display: block;
+
+	&.big-icon-success{
+		color:#28a745;
+	}
+	&.big-icon-error{
+		color:#dc3545;
+	}
+}
+.fade.in, .modal-backdrop.fade.in{
+	opacity: 1;
+}
+.modal.fade.in .modal-dialog{
+	transform: translate(0, 0);
+}
